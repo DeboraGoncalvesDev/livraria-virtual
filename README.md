@@ -1,2 +1,2 @@
 # livraria-virtual
- simulação de um web site para listas de leitura e resenhas compartilhadas
+ simulação de uma página de login para um web site de listas de leitura e resenhas compartilhadas
