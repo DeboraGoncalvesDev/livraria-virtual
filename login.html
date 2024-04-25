@@ -8,6 +8,7 @@
     <title>Login</title>
 </head>
 <body>
+    
     <div id="container">
             <p>“A leitura é, provavelmente, uma outra maneira de estar em um lugar”. — José Saramago</p>
 
@@ -16,17 +17,24 @@
                 <div id="email">
                     <span class="material-symbols-outlined"> person </span>
                     <label for="imail">Email:</label>
-                    <input type="email" name="imail" id="imail" required minlength="15" maxlength="30">
+                    <input type="email" name="imail" id="imail" required minlength="10" maxlength="30">
                 </div>
 
                 <div id="senha">
                     <span class="material-symbols-outlined"> key_vertical </span>
                     <label for="isenha">Senha:</label>
-                    <input type="password" name="isenha" id="isenha">
+                    <input type="password" name="isenha" id="isenha" required minlength="6" maxlength="20">
                 </div>
                 <br>
+                <div id="mostrar-btn">
+                        <label for="botaoMostrarSenha" class="legenda">Mostrar senha</label>
+                        <input type="checkbox" name="botaoMostrarSenha" id="botaoMostrarSenha">
+                </div>
 
-                <input type="submit" value="Entrar">
+                <div id="login-btn">
+                    <input type="submit" value="Entrar" id="entrar" onclick="logar()">
+                    <input type="reset" value="Limpar" id="limpar">
+                </div>
                 
 
 
@@ -35,5 +43,6 @@
 
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
